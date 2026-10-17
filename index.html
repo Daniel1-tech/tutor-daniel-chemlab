@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b66">
+<meta name="description" content="Free Nigerian SSCE and WAEC Chemistry learning app for students and teachers.">
+<title>Tutor Daniel Chemlab</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="brand" data-view="home" aria-label="Go to home"><span class="brand-mark">⚗</span><span><strong>Tutor Daniel Chemlab</strong><small>Learn Chemistry. Understand the world.</small></span></button>
+  <button id="installBtn" class="btn btn-outline hidden">Install app</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" aria-label="Main navigation">
+    <button class="nav active" data-view="home">⌂ <span>Dashboard</span></button>
+    <button class="nav" data-view="lessons">▤ <span>Lesson notes</span></button>
+    <button class="nav" data-view="practice">✓ <span>Exam practice</span></button>
+    <button class="nav" data-view="practical">⚗ <span>Practical lab</span></button>
+    <button class="nav" data-view="teacher">✎ <span>Teacher tools</span></button>
+    <button class="nav" data-view="progress">▥ <span>My progress</span></button>
+    <div class="sidebar-note"><strong>Free learning</strong><p>Made for Nigerian SSCE and WAEC Chemistry revision.</p><span class="offline-pill">● Offline-ready shell</span></div>
+  </aside>
+  <main id="app" tabindex="-1"><div class="loading">Loading your chemistry lab…</div></main>
+</div>
+<footer>© <span id="year"></span> Tutor Daniel Chemlab · Learning resource prototype. Always follow teacher guidance and laboratory safety rules.</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
